@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/addiction1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Calendar View -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/amarante"
+            android:text="Select  a date to start Your Journey:"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"/>
+
+        <!-- TextView to display selected date -->
+        <TextView
+            android:id="@+id/selectedDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/aladin"
+            android:text="Selected Date: "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- EditText for addiction triggers -->
+        <EditText
+            android:id="@+id/addictionTriggersEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/aladin"
+            android:hint="Things in your environment that trigger addiction"
+            android:textColorHint="@color/white" />
+
+        <!-- CheckBox for removing distractions -->
+        <CheckBox
+            android:id="@+id/removeDistractionsCheckBox"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/aladin"
+            android:text="Removed all distracting elements"
+            android:textColor="@color/white" />
+
+        <!-- TextView above the Spinner to explain alternatives -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/akaya_kanadaka"
+            android:text=" Alternatives:"
+
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Spinner for selecting activities -->
+        <Spinner
+            android:id="@+id/activitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Button for joining community -->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Click The below button join a overwhelming Community to overcome addiction"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/communityLinkButton"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFB300"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Join Community" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>

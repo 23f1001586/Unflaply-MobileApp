@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/personlaitytypes"
+    android:gravity="center">
+
+    <!-- TextView for the instruction or title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Select Your Personality Type"
+        android:textColor="#FF000000"
+        android:textSize="24sp" />
+
+    <!-- RadioGroup for selecting personality type -->
+    <RadioGroup
+        android:id="@+id/radioGroupPersonality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColor="#FBFDFD"
+        android:layout_marginBottom="16dp">
+
+        <!-- RadioButtons for personality options -->
+        <RadioButton
+            android:id="@+id/radioIntrovert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:checked="false"
+            android:fontFamily="@font/acme"
+            android:text="Introvert"
+            android:textColor="#FFFFFFFF"
+            android:textColorLink="@color/white"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/radioExtrovert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="Extrovert"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/radioAnalytical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="Analytical"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/radioCreative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="Creative"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </RadioGroup>
+
+    <!-- Button to proceed to the next activity -->
+    <Button
+        android:id="@+id/btnSubmitPersonality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:background="#008080"
+        android:textColor="#ffffff" />
+
+    <!-- Link to personality test -->
+    <TextView
+        android:id="@+id/btnLinkToTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:fontFamily="casual"
+        android:text="Take the personality test"
+        android:textColor="@color/white" />
+
+</LinearLayout>
